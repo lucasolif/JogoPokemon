@@ -8,12 +8,14 @@ public class Pokemon {
     private int ataque;
     private int defesa;
     private int agilidade;
+    private int forca;
 
-    public Pokemon(String nome, int ataque, int defesa, int agilidade) {
+    public Pokemon(String nome, int ataque, int defesa, int agilidade, int forca) {
         this.nome = nome;
         this.ataque = ataque;
         this.defesa = defesa;
         this.agilidade = agilidade;
+        this.forca = forca;
     }
 
     public String getNome() {
@@ -48,6 +50,14 @@ public class Pokemon {
         this.agilidade = agilidade;
     }
 
+    public int getForca() {
+        return forca;
+    }
+
+    public void setForca(int forca) {
+        this.forca = forca;
+    }
+  
     @Override
     public String toString() {
         return  "Nome:" + nome + " Ataque:" + ataque + " Defesa:" + defesa + " Agilidade:" + agilidade;
